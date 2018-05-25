@@ -7,6 +7,7 @@
     <groupId>Spring_simple_calculator_with_JPA</groupId>
     <artifactId>Spring_simple_calculator_with_JPA</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>war</packaging>
 
     <properties>
         <java.version>1.8</java.version>
@@ -85,7 +86,7 @@
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
-            <version>9.3-1100-jdbc41</version>
+            <version>42.1.4</version>
         </dependency>
 
         <dependency>

@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="db_Tarex@localhost">
+  <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.4">
+    <root id="1"/>
+    <database id="2" parent="1" name="db_Tarex">
+      <ObjectId>434856</ObjectId>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </database>
+    <database id="3" parent="1" name="postgres">
+      <ObjectId>12938</ObjectId>
+    </database>
+    <database id="4" parent="1" name="dvdrental">
+      <ObjectId>139461</ObjectId>
+    </database>
+    <database id="5" parent="1" name="demo">
+      <ObjectId>180848</ObjectId>
+    </database>
+    <database id="6" parent="1" name="itis-test">
+      <ObjectId>426649</ObjectId>
+    </database>
+    <database id="7" parent="1" name="itis">
+      <ObjectId>426650</ObjectId>
+    </database>
+    <database id="8" parent="1" name="fix_users">
+      <ObjectId>426651</ObjectId>
+    </database>
+    <database id="9" parent="1" name="fix_user_db">
+      <ObjectId>426670</ObjectId>
+    </database>
+    <database id="10" parent="1" name="semestrovka">
+      <ObjectId>426737</ObjectId>
+    </database>
+    <database id="11" parent="1" name="demo2">
+      <ObjectId>426770</ObjectId>
+    </database>
+    <schema id="12" parent="2" name="public">
+      <ObjectId>2200</ObjectId>
+      <IntrospectionTimestamp>2018-05-24.00:50:56.957</IntrospectionTimestamp>
+      <IntrospectionStateNumber>1886</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="13" parent="2" name="pg_catalog">
+      <ObjectId>11</ObjectId>
+    </schema>
+    <schema id="14" parent="2" name="pg_toast">
+      <ObjectId>99</ObjectId>
+    </schema>
+    <schema id="15" parent="2" name="pg_temp_1">
+      <ObjectId>11736</ObjectId>
+    </schema>
+    <schema id="16" parent="2" name="pg_toast_temp_1">
+      <ObjectId>11737</ObjectId>
+    </schema>
+    <schema id="17" parent="2" name="information_schema">
+      <ObjectId>12648</ObjectId>
+    </schema>
+    <sequence id="18" parent="12" name="address_id_seq">
+      <ObjectId>435028</ObjectId>
+      <StateNumber>1863</StateNumber>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <sequence id="19" parent="12" name="futures_id_seq">
+      <ObjectId>435039</ObjectId>
+      <StateNumber>1864</StateNumber>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <sequence id="20" parent="12" name="rating_id_seq">
+      <ObjectId>435105</ObjectId>
+      <StateNumber>1873</StateNumber>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <sequence id="21" parent="12" name="restaurant_id_seq">
+      <ObjectId>435047</ObjectId>
+      <StateNumber>1865</StateNumber>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <sequence id="22" parent="12" name="review_db_id_seq">
+      <ObjectId>435058</ObjectId>
+      <StateNumber>1866</StateNumber>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <sequence id="23" parent="12" name="token_id_seq">
+      <ObjectId>435066</ObjectId>
+      <StateNumber>1867</StateNumber>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <sequence id="24" parent="12" name="user_db_id_seq">
+      <ObjectId>435074</ObjectId>
+      <StateNumber>1868</StateNumber>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <table id="25" parent="12" name="address">
+      <ObjectId>435030</ObjectId>
+      <StateNumber>1870</StateNumber>
+    </table>
+    <table id="26" parent="12" name="futures">
+      <ObjectId>435041</ObjectId>
+      <StateNumber>1869</StateNumber>
+    </table>
+    <table id="27" parent="12" name="rating">
+      <ObjectId>435107</ObjectId>
+      <StateNumber>1873</StateNumber>
+    </table>
+    <table id="28" parent="12" name="restaurant">
+      <ObjectId>435049</ObjectId>
+      <StateNumber>1871</StateNumber>
+    </table>
+    <table id="29" parent="12" name="review_db">
+      <ObjectId>435060</ObjectId>
+      <StateNumber>1871</StateNumber>
+    </table>
+    <table id="30" parent="12" name="token">
+      <ObjectId>435068</ObjectId>
+      <StateNumber>1872</StateNumber>
+    </table>
+    <table id="31" parent="12" name="user_db">
+      <ObjectId>435076</ObjectId>
+      <StateNumber>1886</StateNumber>
+    </table>
+    <column id="32" parent="25" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1863</StateNumber>
+      <SequenceName>address_id_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;address_id_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="33" parent="25" name="city">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>1863</StateNumber>
+    </column>
+    <column id="34" parent="25" name="house">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>1863</StateNumber>
+    </column>
+    <column id="35" parent="25" name="street">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>1863</StateNumber>
+    </column>
+    <index id="36" parent="25" name="address_pkey">
+      <ObjectId>435037</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="37" parent="25" name="address_pkey">
+      <ObjectId>435038</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>address_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="38" parent="26" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1864</StateNumber>
+      <SequenceName>futures_id_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;futures_id_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="39" parent="26" name="avg_price">
+      <Position>2</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1864</StateNumber>
+    </column>
+    <column id="40" parent="26" name="child_food">
+      <Position>3</Position>
+      <DataType>boolean|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1864</StateNumber>
+    </column>
+    <column id="41" parent="26" name="dress_code">
+      <Position>4</Position>
+      <DataType>boolean|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1864</StateNumber>
+    </column>
+    <column id="42" parent="26" name="takeaway_food">
+      <Position>5</Position>
+      <DataType>boolean|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1864</StateNumber>
+    </column>
+    <column id="43" parent="26" name="wifi_exists">
+      <Position>6</Position>
+      <DataType>boolean|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1864</StateNumber>
+    </column>
+    <column id="44" parent="26" name="futures_id">
+      <Position>7</Position>
+      <DataType>bigint|0</DataType>
+      <StateNumber>1864</StateNumber>
+    </column>
+    <index id="45" parent="26" name="futures_pkey">
+      <ObjectId>435045</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="46" parent="26" name="futures_pkey">
+      <ObjectId>435046</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>futures_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="47" parent="26" name="fkgfbsi1fvt02aao86gew5gnj3i">
+      <ObjectId>435085</ObjectId>
+      <ColNames>futures_id</ColNames>
+      <RefTableId>435049</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>restaurant</RefTableName>
+      <RefKeyName>restaurant_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="48" parent="27" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1873</StateNumber>
+      <SequenceName>rating_id_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;rating_id_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="49" parent="27" name="count_user_answers">
+      <Position>2</Position>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1873</StateNumber>
+    </column>
+    <column id="50" parent="27" name="rating">
+      <Position>3</Position>
+      <DataType>real|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1873</StateNumber>
+    </column>
+    <index id="51" parent="27" name="rating_pkey">
+      <ObjectId>435111</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="52" parent="27" name="rating_pkey">
+      <ObjectId>435112</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>rating_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="53" parent="28" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1865</StateNumber>
+      <SequenceName>restaurant_id_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;restaurant_id_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="54" parent="28" name="count_user_answers">
+      <Position>2</Position>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1865</StateNumber>
+    </column>
+    <column id="55" parent="28" name="rating">
+      <Position>3</Position>
+      <DataType>real|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1865</StateNumber>
+    </column>
+    <column id="56" parent="28" name="close_time">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>1865</StateNumber>
+    </column>
+    <column id="57" parent="28" name="description">
+      <Position>5</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>1865</StateNumber>
+    </column>
+    <column id="58" parent="28" name="name">
+      <Position>6</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>1865</StateNumber>
+    </column>
+    <column id="59" parent="28" name="number">
+      <Position>7</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>1865</StateNumber>
+    </column>
+    <column id="60" parent="28" name="open_time">
+      <Position>8</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>1865</StateNumber>
+    </column>
+    <column id="61" parent="28" name="url_photo">
+      <Position>9</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>1865</StateNumber>
+    </column>
+    <column id="62" parent="28" name="restaurant_id">
+      <Position>10</Position>
+      <DataType>bigint|0</DataType>
+      <StateNumber>1865</StateNumber>
+    </column>
+    <index id="63" parent="28" name="restaurant_pkey">
+      <ObjectId>435056</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="64" parent="28" name="restaurant_pkey">
+      <ObjectId>435057</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>restaurant_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="65" parent="28" name="fkskehalhng5nm9xp5dpglp107n">
+      <ObjectId>435090</ObjectId>
+      <ColNames>restaurant_id</ColNames>
+      <RefTableId>435030</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>address</RefTableName>
+      <RefKeyName>address_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="66" parent="29" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1866</StateNumber>
+      <SequenceName>review_db_id_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;review_db_id_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="67" parent="29" name="rewiew">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>1866</StateNumber>
+    </column>
+    <column id="68" parent="29" name="review_id">
+      <Position>3</Position>
+      <DataType>bigint|0</DataType>
+      <StateNumber>1866</StateNumber>
+    </column>
+    <index id="69" parent="29" name="review_db_pkey">
+      <ObjectId>435064</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="70" parent="29" name="review_db_pkey">
+      <ObjectId>435065</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>review_db_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="71" parent="29" name="fkdg8fwvi4bwl2t94rde759w8ik">
+      <ObjectId>435095</ObjectId>
+      <ColNames>review_id</ColNames>
+      <RefTableId>435049</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>restaurant</RefTableName>
+      <RefKeyName>restaurant_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="72" parent="30" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1867</StateNumber>
+      <SequenceName>token_id_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;token_id_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="73" parent="30" name="value">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>1867</StateNumber>
+    </column>
+    <column id="74" parent="30" name="user_id">
+      <Position>3</Position>
+      <DataType>bigint|0</DataType>
+      <StateNumber>1867</StateNumber>
+    </column>
+    <index id="75" parent="30" name="token_pkey">
+      <ObjectId>435072</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="76" parent="30" name="token_pkey">
+      <ObjectId>435073</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>token_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="77" parent="30" name="fk5ckbni6uf88yx3r0ayf6jds2a">
+      <ObjectId>435100</ObjectId>
+      <ColNames>user_id</ColNames>
+      <RefTableId>435076</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>user_db</RefTableName>
+      <RefKeyName>user_db_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="78" parent="31" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1868</StateNumber>
+      <SequenceName>user_db_id_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;user_db_id_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="79" parent="31" name="first_name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>1868</StateNumber>
+    </column>
+    <column id="80" parent="31" name="hash_password">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>1868</StateNumber>
+    </column>
+    <column id="81" parent="31" name="last_name">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>1868</StateNumber>
+    </column>
+    <column id="82" parent="31" name="login">
+      <Position>5</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>1868</StateNumber>
+    </column>
+    <column id="83" parent="31" name="role">
+      <Position>6</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>1881</StateNumber>
+    </column>
+    <column id="84" parent="31" name="state">
+      <Position>7</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>1882</StateNumber>
+    </column>
+    <column id="85" parent="31" name="birth_date">
+      <Position>8</Position>
+      <DataType>timestamp|0</DataType>
+      <StateNumber>1886</StateNumber>
+    </column>
+    <index id="86" parent="31" name="user_db_pkey">
+      <ObjectId>435083</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="87" parent="31" name="user_db_pkey">
+      <ObjectId>435084</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>user_db_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
